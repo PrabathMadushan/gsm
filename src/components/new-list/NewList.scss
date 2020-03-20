@@ -1,0 +1,22 @@
+.new-list-wrapper{
+    width: 250px;
+    padding: 10px;
+    background-color: #ffffff3a;
+    color: rgba(255, 255, 255, 0.836);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 200ms ease-in;
+    display: flex;
+
+
+    svg{
+        transform: scale(1.4);
+        margin-right: 10px;
+    }
+
+    &:hover{
+        background-color: #ffffff75;
+        color: rgb(255, 255, 255);
+    }
+}
