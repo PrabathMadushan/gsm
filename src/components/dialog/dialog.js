@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import './dialog.scss'
 
 const Dialog = ({children}) => {
-
-    return <div className='com-dialog-main-wrapper'>
+    const initialState={
+        show:false
+    }
+    const {state,setState} = useState(initialState);
+    return <div className='com-dialog-main-wrapper '>
             <div className='dialog-body'>
                 {children}
             </div>

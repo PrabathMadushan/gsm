@@ -6,13 +6,6 @@ import NewCard from "../new-card/NewCard";
 const List = ({title}) => {
   const [cards, setCards] = useState([]);
 
-  const addCard = (card) => {
-    setCards([...cards,{
-      id:cards.length,
-      value:card
-    }]);
-  };
-
   return (
     <div className="list-cwrapper">
       <div className="list-wrapper">
@@ -25,7 +18,7 @@ const List = ({title}) => {
           }
           {/* <Card /> */}
           {/* <Card /> */}
-          <NewCard addCard={addCard}/>
+          <NewCard/>
         </div>
       </div>
     </div>
